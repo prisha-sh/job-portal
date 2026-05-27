@@ -22,7 +22,7 @@ import ChatLoader from "../components/ChatLoader"; // adjust path
 import CallButton from "../components/CallButton"; // adjust path
 import { ChatWindow } from "../components/ChatWindow";
 
-const STREAM_API_KEY = "dnc52adyqvqk";
+const STREAM_API_KEY = import.meta.env.VITE_STREAM_API_KEY || "dnc52adyqvqk";
 
 /** decode base64url JWT payload */
 function decodeJwt(token) {

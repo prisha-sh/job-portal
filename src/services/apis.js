@@ -1,4 +1,4 @@
-const BASE_URL = 'https://final-year-project-backend-0q17.onrender.com/api'
+const BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://final-year-project-backend-0q17.onrender.com/api'
 
 // AUTH ENDPOINTS
 export const authEndpoints = {

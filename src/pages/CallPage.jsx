@@ -40,7 +40,7 @@ async function generateDeterministicChannelId(idA, idB) {
   return `c-${(h >>> 0).toString(16)}`.slice(0, 64);
 }
 
-const STREAM_API_KEY = "dnc52adyqvqk";
+const STREAM_API_KEY = import.meta.env.VITE_STREAM_API_KEY || "dnc52adyqvqk";
 
 const CallPage = () => {
   const { id: otherUserId } = useParams();
